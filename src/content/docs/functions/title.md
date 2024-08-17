@@ -1,12 +1,12 @@
 ---
 title: $title
-description: $title add a title to an embed.
+description: $title agregar un título a un embed.
 id: title
 ---
 
-`$title` add a title to an embed.
+`$title` agregar un título a un embed.
 
-## Usage
+## Uso
 
 ```aoi
 $title[index?;title;URL?]
@@ -22,13 +22,13 @@ $title[index?;title;URL?]
 
 ## Example(s)
 
-This will create an embed with a title:
+Esto creará un embed con un título.:
 
 ```javascript
 client.command({
     name: "title",
     code: `
-   $title[Hello!;https://aoi.js.org]
-   $description[The title contains a hyperlink..]`
+   $title[Hola!;https://aoi.js.org]
+   $description[El título contiene un hyperlink..]`
 });
 ```
