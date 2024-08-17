@@ -20,7 +20,7 @@ $title[index?;title;URL?]
 | title  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The content of the embed title.  |   true   |
 | URL?   | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | URL which will be the hyperlink. |  false   |
 
-## Example(s)
+## Ejemplo
 
 Esto creará un embed con un título.:
 
