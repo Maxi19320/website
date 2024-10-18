@@ -14,7 +14,7 @@ $abbreviate[num;dec?]
 
 ## Parámetros
 
-| Fila | Tipo                                                                                              | Descripción                     | Requerido |
+| Campo | Tipo                                                                                              | Descripción                     | Requerido |
 | ---- | ------------------------------------------------------------------------------------------------- | ------------------------------- | :-------: |
 | num  | number | Número a abreviar.              |   sí      |
 | dec? | number | Decimal entre la abreviatura.   |   no      |
