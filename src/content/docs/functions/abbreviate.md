@@ -4,9 +4,9 @@ description: $abbreviate will allow you to abbreviate large numbers.
 id: abbreviate
 ---
 
-`$abbreviate` will allow you to abbreviate large numbers.
+`$abbreviate` Te permitirá abreviar números grandes.
 
-## Usage
+## Uso
 
 ```aoi
 $abbreviate[num;dec?]
@@ -14,8 +14,8 @@ $abbreviate[num;dec?]
 
 ## Parameters
 
-| Field | Type                                                                                              | Description                     | Required |
-| ----- | ------------------------------------------------------------------------------------------------- | ------------------------------- | :------: |
+| Fila | Type                                                                                              | Description                     | Required |
+| ---- | ------------------------------------------------------------------------------------------------- | ------------------------------- | :------: |
 | num   | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Number to abbreviate.           |   true   |
 | dec?  | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Decimal between the abbreviate. |  false   |
 
