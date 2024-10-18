@@ -16,7 +16,7 @@ $abs[number]
 
 | Campo  | Tipo                                                                                              | Descripción  | Requerido |
 | ------ | ------------------------------------------------------------------------------------------------- | ------------ | :-------: |
-| number | El número.   |    sí     |
+| number | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | El número.   |    sí     |
 
 ## Ejemplo(s)
 
