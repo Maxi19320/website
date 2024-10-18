@@ -1,10 +1,10 @@
 ---
 title: $abbreviate
-description: $abbreviate will allow you to abbreviate large numbers.
+description: $abbreviate te permitirá abreviar números grandes.
 id: abbreviate
 ---
 
-`$abbreviate` Te permitirá abreviar números grandes.
+`$abbreviate` te permitirá abreviar números grandes.
 
 ## Uso
 
@@ -16,12 +16,12 @@ $abbreviate[num;dec?]
 
 | Fila | Tipo                                                                                              | Descripción                     | Requerido |
 | ---- | ------------------------------------------------------------------------------------------------- | ------------------------------- | :-------: |
-| num  | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Número a abreviar.              |   sí      |
-| dec? | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | Decimal entre la abreviatura.   |   no      |
+| num  | [number] | Número a abreviar.              |   sí      |
+| dec? | [number] | Decimal entre la abreviatura.   |   no      |
 
-## Example(s)
+## Ejemplo(s)
 
-This returns: `20k`
+Esto devuelve: `20k`
 
 ```javascript
 client.command({
@@ -32,7 +32,7 @@ client.command({
 });
 ```
 
-This returns: `20.0k`
+Esto devuelve: `20.0k`
 
 ```javascript
 client.command({
@@ -41,4 +41,5 @@ client.command({
   $abbreviate[20000;1]
   `
 });
+```
 ```
