@@ -1,27 +1,26 @@
 ---
 title: $addApplicationCommandPermissions
-description: $addApplicationCommandPermissions will change permissions of a slash command.
+description: $addApplicationCommandPermissions cambiará los permisos de un comando de barra.
 id: addApplicationCommandPermissions
 ---
 
-## Usage
+## Uso
 
 ```aoi
 $addApplicationCommandPermissions[guildID/global?;id;...perms]
 ```
 
-## Parameters
+## Parámetros
 
-| Field          | Type                                                                                                                                                                                                 | Description                                                                 | Required |
-| -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- | :------: |
-| guildID/global | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [number](https://developer.mozilla.org/en-us/docs/web/javascript/reference/global_objects/number) | Application command type. <br/> 1. **global** <br/> 2. **specific guildID** |   true   |
-| id             | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)                                                                                                    | Application command ID.                                                     |   true   |
-| ...perms       | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)                                                                                                    | Permissions.                                                                |   true   |
+| Campo          | Tipo                                                                                                                                                                                                 | Descripción                                                                 | Requerido |
+| -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- | :-------: |
+| guildID/global | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [number](https://developer.mozilla.org/en-us/docs/web/javascript/reference/global_objects/number) | Tipo de comando de aplicación. <br/> 1. **global** <br/> 2. **guildID específico** |    sí     |
+| id             | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)                                                                                                    | ID del comando de aplicación.                                               |    sí     |
+| ...perms       | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)                                                                                                    | Permisos.                                                                   |    sí     |
 
-## Example(s)
+## Ejemplo(s)
 
-This will disable the slash command for everyone in the guild ( make sure to replace "ID" with the actual slash command
-ID ):
+Esto deshabilitará el comando de barra para todos en el gremio (asegúrate de reemplazar "ID" con el ID real del comando de barra):
 
 ```javascript
 client.command({
@@ -35,4 +34,5 @@ client.command({
   }
 ]]`
 });
+```
 ```
