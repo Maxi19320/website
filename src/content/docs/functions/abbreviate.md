@@ -16,8 +16,8 @@ $abbreviate[num;dec?]
 
 | Fila | Tipo                                                                                              | Descripción                     | Requerido |
 | ---- | ------------------------------------------------------------------------------------------------- | ------------------------------- | :-------: |
-| num  | [number] | Número a abreviar.              |   sí      |
-| dec? | [number] | Decimal entre la abreviatura.   |   no      |
+| num  | number | Número a abreviar.              |   sí      |
+| dec? | number | Decimal entre la abreviatura.   |   no      |
 
 ## Ejemplo(s)
 
