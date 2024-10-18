@@ -1,30 +1,31 @@
 ---
 title: $abs
-description: $abs returns the absolute value of the number.
+description: $abs devuelve el valor absoluto del número.
 id: abs
 ---
 
-`$abs` returns the absolute value of the number.
+`$abs` devuelve el valor absoluto del número.
 
-## Usage
+## Uso
 
 ```aoi
 $abs[number]
 ```
 
-## Parameters
+## Parámetros
 
-| Field  | Type                                                                                              | Description | Required |
-| ------ | ------------------------------------------------------------------------------------------------- | ----------- | :------: |
-| number | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | The number. |   true   |
+| Campo  | Tipo                                                                                              | Descripción  | Requerido |
+| ------ | ------------------------------------------------------------------------------------------------- | ------------ | :-------: |
+| number | El número.   |    sí     |
 
-## Example(s)
+## Ejemplo(s)
 
-This will return the absolute value of `-151.5`:
+Esto devolverá el valor absoluto de `-151.5`:
 
 ```js
 client.command({
     name: "abs",
     code: `$abs[-151.5]`
 });
+```
 ```
