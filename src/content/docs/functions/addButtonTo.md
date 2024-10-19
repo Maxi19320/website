@@ -1,105 +1,105 @@
 ---
 title: $addButtonTo
-description: $addButtonTo will add a button to a specific message.
+description: $addButtonTo añadirá un botón a un mensaje específico.
 id: addButtonTo
 ---
 
-`$addButtonTo` will add a button to a specific message.
+`$addButtonTo` añadirá un botón a un mensaje específico.
 
-## Usage
+## Uso
 
 ```aoi
 $addButtonTo[channelId;messageId;index;label;style;customID;disabled?;emoji?]
 ```
 
-## Parameters
+## Parámetros
 
-| Field     | Type                                                                                                | Description                                                                                                              | Required |
-| --------- | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ | :------: |
-| channelId | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | The channel id.                                                                                                          |   true   |
-| messageId | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | The message id.                                                                                                          |   true   |
-| index     | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | In which (action)row the button appears.                                                                                 |   true   |
-| label     | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The text that will be displayed on the button as label.                                                                  |   true   |
-| style     | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The button **[style](https://discord.com/developers/docs/interactions/message-components#button-object-button-styles)**. |   true   |
-| customID  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The component custom ID used to identify the button.                                                                     |   true   |
-| disabled? | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | Make the button unusable/disabled? <br /> 1. **true** <br /> 2. **false** (default)                                      |  false   |
-| emoji?    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The emoji displayed in the button.                                                                                       |  false   |
+| Campo     | Tipo                                                                                                | Descripción                                                                                                              | Requerido |
+| --------- | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ | :-------: |
+| channelId | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | El ID del canal.                                                                                                         |   sí      |
+| messageId | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | El ID del mensaje.                                                                                                       |   sí      |
+| index     | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)   | En qué fila (de acción) aparece el botón.                                                                                |   sí      |
+| label     | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | El texto que se mostrará en el botón como etiqueta.                                                                      |   sí      |
+| style     | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | El **[estilo](https://discord.com/developers/docs/interactions/message-components#button-object-button-styles)** del botón. |   sí      |
+| customID  | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | El ID personalizado usado para identificar el botón.                                                                     |   sí      |
+| disabled? | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | ¿Hacer que el botón sea inusable/desactivado? <br /> 1. **true** <br /> 2. **false** (por defecto)                        |   no      |
+| emoji?    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | El emoji mostrado en el botón.                                                                                           |   no      |
 
-:::danger[Editing]
+:::danger[Edición]
 
-This function only works if the Client is the original author of the message.
+Esta función solo funciona si el Cliente es el autor original del mensaje.
 
 :::
 
 <details open>
-    <summary><h3>Button Types</h3></summary>
+    <summary><h3>Tipos de Botones</h3></summary>
     <table>
       <thead>
         <tr>
-          <th>Name</th>
-          <th>Value</th>
+          <th>Nombre</th>
+          <th>Valor</th>
           <th>Color</th>
           <th></th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>Primary</td>
+          <td>Primario</td>
           <td>1</td>
           <td>blurple</td>
-          <td><code>$addButton[1;Example Button!;primary;customID;false]</code></td>
+          <td><code>$addButton[1;¡Botón de Ejemplo!;primary;customID;false]</code></td>
         </tr>
         <tr>
-          <td>Secondary</td>
+          <td>Secundario</td>
           <td>2</td>
-          <td>grey</td>
-          <td><code>$addButton[1;Example Button!;secondary;customID;false]</code></td>
+          <td>gris</td>
+          <td><code>$addButton[1;¡Botón de Ejemplo!;secondary;customID;false]</code></td>
         </tr>
         <tr>
-          <td>Success</td>
+          <td>Éxito</td>
           <td>3</td>
-          <td>green</td>
-          <td><code>$addButton[1;Example Button!;success;customID;false]</code></td>
+          <td>verde</td>
+          <td><code>$addButton[1;¡Botón de Ejemplo!;success;customID;false]</code></td>
         </tr>
         <tr>
-          <td>Danger</td>
+          <td>Peligro</td>
           <td>4</td>
-          <td>red</td>
-          <td><code>$addButton[1;Example Button!;danger;customID;false]</code></td>
+          <td>rojo</td>
+          <td><code>$addButton[1;¡Botón de Ejemplo!;danger;customID;false]</code></td>
         </tr>
         <tr>
-          <td>Link</td>
+          <td>Enlace</td>
           <td>5</td>
-          <td>grey, navigates to a URL</td>
-          <td><code>$addButton[1;Example Button!;link;https://discord.gg;false]</code></td>
+          <td>gris, navega a una URL</td>
+          <td><code>$addButton[1;¡Botón de Ejemplo!;link;https://discord.gg;false]</code></td>
         </tr>
         <tr>
-          <td>Custom Emoji</td>
-          <td>any</td>
-          <td>any</td>
-          <td><code>$addButton[1;Example Button!;link;customID;false;emojiName/emojiId/emojiString]</code></td>
+          <td>Emoji Personalizado</td>
+          <td>cualquiera</td>
+          <td>cualquiera</td>
+          <td><code>$addButton[1;¡Botón de Ejemplo!;link;customID;false;emojiName/emojiId/emojiString]</code></td>
         </tr>
         <tr>
-          <td>Unicode Emoji</td>
-          <td>any</td>
-          <td>any</td>
-          <td><code>$addButton[1;Example Button!;link;customID;false;😀]</code></td>
+          <td>Emoji Unicode</td>
+          <td>cualquiera</td>
+          <td>cualquiera</td>
+          <td><code>$addButton[1;¡Botón de Ejemplo!;link;customID;false;😀]</code></td>
         </tr>
       </tbody>
     </table>
 </details>
 
-## Example(s)
+## Ejemplo(s)
 
-This adds a primary and link button to the bot's message:
+Esto añade un botón primario y de enlace al mensaje del bot:
 
 ```javascript
 client.command({
     name: "addButtonTo",
     code: `
-    Hello!
-    $addButtonTo[$channelId;$messageId;1;Example Button!;primary;exampleButton;false;💔]
-    $addButtonTo[$channelId;$messageId;1;Example Button!;link;https://discord.gg;false]
+    ¡Hola!
+    $addButtonTo[$channelId;$messageId;1;¡Botón de Ejemplo!;primary;exampleButton;false;💔]
+    $addButtonTo[$channelId;$messageId;1;¡Botón de Ejemplo!;link;https://discord.gg;false]
   `
 });
 ```
@@ -109,7 +109,7 @@ client.interactionCommand({
     name: "exampleButton",
     prototype: "button",
     code: `
-    $interactionReply[Awesome Button Interaction!]
+    $interactionReply[¡Interacción de Botón Increíble!]
   `
 });
 ```
