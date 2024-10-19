@@ -20,7 +20,7 @@ $addButton[index;label;style;customID;disabled?;emoji?]
 | label     | string   | El texto que se mostrará en el botón como etiqueta.                                                                      |   sí      |
 | style     | string   | El **estilo** del botón. |   sí      |
 | customID  | string   | El ID personalizado usado para identificar el botón.                                                                     |   sí      |
-| disabled? | boolean | ¿Hacer que el botón sea inusable/desactivado? <br /> 1. **true** <br /> 2. **false** (por defecto)                        |  no       |
+| disabled? | boolean | ¿Hacer que el botón sea usable o no? <br /> 1. **true** <br /> 2. **false** (por defecto)                        |  no       |
 | emoji?    | string   | El emoji mostrado en el botón.                                                                                           |  no       |
 
 <details open>
