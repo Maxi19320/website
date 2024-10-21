@@ -14,8 +14,8 @@ $abs[number]
 
 ## Parámetros
 
-| Campo  | Tipo                                                                                              | Descripción  | Requerido |
-| ------ | ------------------------------------------------------------------------------------------------- | ------------ | :-------: |
+| Campo  | Tipo   | Descripción  | Requerido |
+| ------ | -------| ------------ | :-------: |
 | number | number | El número.   |    sí     |
 
 ## Ejemplo(s)
@@ -27,5 +27,4 @@ client.command({
     name: "abs",
     code: `$abs[-151.5]`
 });
-```
 ```
