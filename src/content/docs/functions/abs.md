@@ -15,8 +15,8 @@ $abs[number]
 ## Parámetros
 
 | Campo  | Tipo   | Descripción  | Requerido |
-| ------ | -------| ------------ | :-------: |
-| number | number | El número.   |    sí     |
+| ------ | ------ | ------------ | --------- |
+| number | numero | El número.   |    sí     |
 
 ## Ejemplo(s)
 
